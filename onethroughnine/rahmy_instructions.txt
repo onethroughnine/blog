@@ -1,0 +1,20 @@
+Instructions for adding stuff to the blog and so on 
+
+
+hugo new posts/{post_name}.md
+- run from blog/onethroughnine
+- create a new blog post in the markdown file specified.
+
+hugo -t {theme}
+- run from anywhere
+- generate html from markdown
+    - generate public site (onethroughnine.github.io) from static assets (blog/onethroughnine)
+
+hugo server
+- run from anywhere
+- locally run site before publishing
+
+onethroughnine.github.io is the remote repo which needs to be kept up to date with the site.
+the local version is kept as a submodule under the "public" folder (run git remote -v to see the
+difference in the submodule's remote location versus the blog/onethroughnine remote location).
+

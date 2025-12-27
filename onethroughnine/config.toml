@@ -1,0 +1,4 @@
+baseURL = 'https://onethroughnine.github.io/'
+languageCode = 'en-us'
+title = 'One Through Nine'
+theme="loficode"
