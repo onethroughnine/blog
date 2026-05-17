@@ -3,5 +3,5 @@
 	url = https://github.com/raisingpixels/loficode-hugo-theme.git
 [submodule "onethroughnine/public"]
 	path = onethroughnine/public
-	url = git@github.com-scoundrelonethroughnine:onethroughnine/onethroughnine.github.io.git
+	url = git@github.com:onethroughnine/onethroughnine.github.io.git
 	branch = main
