@@ -2,3 +2,8 @@ baseURL = 'https://onethroughnine.github.io/'
 languageCode = 'en-us'
 title = 'One Through Nine'
 theme="loficode"
+
+[params]
+tagline = ""
+[params.Author]
+image = "public/static/images/profile.png"

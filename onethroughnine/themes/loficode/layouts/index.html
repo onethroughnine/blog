@@ -3,7 +3,7 @@
   <div class="author-profile-section">
     <div class="profile-photo-container">
       <img
-        src="{{ .Site.Params.Author.image | absURL }}"
+        src="{{ .Site.Params.Author.image | relURL }}"
         alt="{{ .Site.Params.Author.name }}"
         class="profile-photo"
       />
@@ -87,6 +87,17 @@
       {{ end }} {{ end }}
     </div>
   </div>
+
+  {{ $welcomePost := where .Site.RegularPages "Title" "Welcome!" }}
+  {{ if $welcomePost }}
+  {{ with index $welcomePost 0 }}
+  <div class="welcome-section">
+    <article class="welcome-content">
+      {{ .Content }}
+    </article>
+  </div>
+  {{ end }}
+  {{ end }}
 
   <div class="filter-section">
     <div class="filter-tags">
